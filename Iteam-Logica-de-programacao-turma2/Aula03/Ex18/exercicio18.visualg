@@ -1,0 +1,29 @@
+algoritmo "exercicio18"
+// Descrição   : Solicita a senha do usuário até que a senha correta seja digitada.
+// Autor(a)    : Diandro Felipe
+// Data atual  : 09/08/2026
+// Professora  : Helida Batista
+
+var
+   senha_correta, senha_digitada: caractere
+
+inicio
+   // Define a senha cadastrada/correta
+   senha_correta <- "1234"
+   
+   // Primeira leitura da senha
+   escreva("Digite a sua senha: ")
+   leia(senha_digitada)
+   
+   // Enquanto a senha digitada for diferente da correta, repete o bloco
+   enquanto (senha_digitada <> senha_correta) faca
+      escreval("Senha incorreta! Tente novamente.")
+      escreval("")
+      escreva("Digite a sua senha: ")
+      leia(senha_digitada)
+   fimenquanto
+   
+   // Mensagem de sucesso ao sair do laço
+   escreval("Acesso permitido.")
+
+fimalgoritmo
