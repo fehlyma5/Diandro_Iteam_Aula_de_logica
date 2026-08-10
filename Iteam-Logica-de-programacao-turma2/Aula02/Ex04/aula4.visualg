@@ -1,0 +1,20 @@
+algoritmo "aula4"
+// Disciplina   : Lógica de Programação
+// Descrição    : Lê a idade do usuário e informa se ele pode dirigir.
+
+var
+   idade: inteiro
+
+inicio
+   // Solicita a idade do usuário
+   escreva("Digite a sua idade: ")
+   leia(idade)
+   
+   // Estrutura de seleção para verificar se é maior ou igual a 18 anos
+   se (idade >= 18) entao
+      escreval("Você tem ", idade, " anos. Já pode dirigir!")
+   senao
+      escreval("Você tem ", idade, " anos. Ainda não pode dirigir!")
+   fimse
+
+fimalgoritmo
