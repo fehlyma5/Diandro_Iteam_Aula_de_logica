@@ -1,0 +1,27 @@
+algoritmo "exercicio9"
+// Descrição   : valor do produto com desconto e total a pagar
+// Autor(a)    : Diandro Felipe
+// Data atual  : 04/08/2026
+
+var
+   produto, percentual, desconto, tot_pagar: real
+
+inicio
+   // 1. Leitura do valor do produto
+   escreval("Informe o valor do produto: ")
+   leia(produto)
+   
+   // 2. Leitura do percentual de desconto (corrigindo a leitura dinamica)
+   escreval("Informe a porcentagem de desconto (%): ")
+   leia(percentual)
+   
+   // 3. Calculos
+   desconto <- produto * (percentual / 100)
+   tot_pagar <- produto - desconto
+   
+   // 4. Exibicao dos resultados
+   escreval("Desconto aplicado: ", percentual, "%")
+   escreval("O valor do desconto foi de: R$ ", desconto)
+   escreval("O valor final a pagar é de: R$ ", tot_pagar)
+
+fimalgoritmo
