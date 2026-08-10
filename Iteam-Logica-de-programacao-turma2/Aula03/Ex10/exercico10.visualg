@@ -1,0 +1,37 @@
+algoritmo "exercicio10"
+// Descrição   : Recebe dois números e calcula soma, subtração, multiplicação, divisão, resto e exponenciação
+// Autor(a)    : Diandro Felipe
+// professora  : Helida Batista
+// Data atual  : 09/08/2026
+
+var
+   num1, num2: real
+   soma, subtracao, multiplicacao, divisao, resto, potencia: real
+
+inicio
+   // Entrada dos dados
+   escreva("Digite o primeiro número: ")
+   leia(num1)
+   
+   escreva("Digite o segundo número: ")
+   leia(num2)
+   
+   // Processamento (Cálculos)
+   soma <- num1 + num2
+   subtracao <- num1 - num2
+   multiplicacao <- num1 * num2
+   divisao <- num1 / num2
+   resto <- num1 mod num2         // Operador de resto da divisão
+   potencia <- num1 ^ num2      // Operador de exponenciação (num1 elevado a num2)
+   
+   // Saída dos resultados
+   escreval("")
+   escreval("=== RESULTADOS ===")
+   escreval("Soma: ", num1, " + ", num2, " = ", soma)
+   escreval("Subtração: ", num1, " - ", num2, " = ", subtracao)
+   escreval("Multiplicação: ", num1, " * ", num2, " = ", multiplicacao)
+   escreval("Divisão: ", num1, " / ", num2, " = ", divisao)
+   escreval("Resto da divisão: ", num1, " % ", num2, " = ", resto)
+   escreval("Exponenciação: ", num1, " ^ ", num2, " = ", potencia)
+
+fimalgoritmo
