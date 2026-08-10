@@ -1,0 +1,65 @@
+algoritmo "exercicio20"
+// Descrição   : Processa notas de 1 a 5 de uma pesquisa de satisfação até a entrada do valor 0.
+// Autor(a)    : Diandro Felipe
+// Data atual  : 09/08/2026
+// Professora  : Helida Batista
+
+var
+   nota, total_respostas, nota_5, nota_1: inteiro
+   soma_notas, media: real
+
+inicio
+   // Inicialização dos contadores e acumuladores
+   total_respostas <- 0
+   soma_notas <- 0.0
+   nota_5 <- 0
+   nota_1 <- 0
+
+   // Primeira leitura da nota
+   escreva("Digite a nota do cliente (1 a 5, ou 0 para encerrar): ")
+   leia(nota)
+
+   // Repetição enquanto a nota for diferente de 0
+   enquanto (nota <> 0) faca
+      // Validação para aceitar apenas notas no intervalo válido (1 a 5)
+      se (nota >= 1) e (nota <= 5) entao
+         total_respostas <- total_respostas + 1
+         soma_notas <- soma_notas + nota
+
+         // Contagem específica das notas 5 e 1
+         se (nota = 5) entao
+            nota_5 <- nota_5 + 1
+         fimse
+
+         se (nota = 1) entao
+            nota_1 <- nota_1 + 1
+         fimse
+      senao
+         escreval("Nota inválida! Digite apenas valores de 1 a 5 (ou 0 para encerrar).")
+      fimse
+
+      escreval("")
+      escreva("Digite a próxima nota (ou 0 para encerrar): ")
+      leia(nota)
+   fimenquanto
+
+   // Exibição dos resultados acumulados
+   escreval("")
+   escreval("=======================================")
+   escreval("        RESULTADO DA PESQUISA          ")
+   escreval("=======================================")
+   escreval("Total de respostas válidas: ", total_respostas)
+
+   // Prevenção de divisão por zero caso nenhuma nota válida tenha sido informada
+   se (total_respostas > 0) entao
+      media <- soma_notas / total_respostas
+      escreval("Média das notas: ", media:1:2)
+      escreval("Quantidade de notas 5 (Excelente): ", nota_5)
+      escreval("Quantidade de notas 1 (Péssimo): ", nota_1)
+   senao
+      escreval("Nenhuma nota válida foi registrada para calcular estatísticas.")
+   fimse
+
+   escreval("=======================================")
+
+fimalgoritmo
