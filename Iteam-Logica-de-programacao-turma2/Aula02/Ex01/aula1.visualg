@@ -1,0 +1,17 @@
+algoritmo "aula1"
+
+// Disciplina   : Lógica de Programação
+// Descrição    : imprimindo Ola Mundo
+// Aluno        : Diandro Felipe
+// Professora   : Helida Batista
+
+var
+  msg: caractere
+   
+
+inicio
+   escreva("Ola Mundo")
+   leia(msg)
+   
+
+fimalgoritmo
