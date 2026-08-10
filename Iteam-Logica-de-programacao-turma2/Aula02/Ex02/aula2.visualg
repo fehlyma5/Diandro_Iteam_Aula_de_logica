@@ -1,0 +1,21 @@
+algoritmo "aula2"
+
+// Disciplina   : Lógica de Programação
+// Professora    : Helida
+// Descrição    : Lê o nome do usuário e exibe uma mensagem de boas-vindas.
+// Aluno       : Diandro Felipe
+
+var
+  nome: caractere
+
+inicio
+  // Solicitando ao usuário que digite seu nome
+  escreva("Digite o seu nome: ")
+
+  // Lendo o valor digitado e armazenando na variável 'nome'
+  leia(nome)
+
+  // Exibindo a mensagem personalizada de boas-vindas
+  escreval("Seja bem-vindo(a), ", nome, "!")
+
+fimalgoritmo
