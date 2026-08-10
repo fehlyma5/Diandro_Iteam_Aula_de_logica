@@ -1,0 +1,47 @@
+algoritmo "exercicio19"
+// Descrição   : Permite realizar vários saques até o saldo zerar ou o usuário encerrar.
+// Autor(a)    : Diandro Felipe
+// Data atual  : 09/08/2026
+// Professora  : Helida Batista
+
+var
+   saldo, saque: real
+
+inicio
+   // Solicita o saldo inicial do usuário
+   escreva("Informe o saldo inicial da conta: R$ ")
+   leia(saldo)
+   escreval("")
+
+   // O laço continua ENQUANTO houver saldo na conta
+   enquanto (saldo > 0) faca
+      escreval("---------------------------------------")
+      escreval("Saldo disponível: R$ ", saldo:1:2)
+      escreva("Digite o valor do saque (ou 0 para encerrar): R$ ")
+      leia(saque)
+
+      // Verificação para encerrar a pedido do usuário
+      se (saque = 0) entao
+         escreval("Operação encerrada pelo usuário.")
+         // Zera a variável de controle para sair do enquanto
+         saldo <- 0
+      senao
+         // Verifica se há saldo suficiente para o valor digitado
+         se (saque <= saldo) e (saque > 0) entao
+            saldo <- saldo - saque
+            escreval("Saque de R$ ", saque:1:2, " realizado com sucesso!")
+         senao
+            se (saque > saldo) entao
+               escreval("Saldo insuficiente!")
+            senao
+               escreval("Valor de saque inválido!")
+            fimse
+         fimse
+      fimse
+      escreval("")
+   fimenquanto
+
+   escreval("=======================================")
+   escreval("Programa finalizado. Volte sempre!")
+
+fimalgoritmo
