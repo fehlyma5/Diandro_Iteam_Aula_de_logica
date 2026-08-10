@@ -1,0 +1,45 @@
+algoritmo "exercicio17"
+// Descrição   : Lê a quantidade de alunos, a média de cada um e conta aprovados e reprovados.
+// Autor(a)    : Diandro Felipe
+// Data atual  : 09/08/2026
+// Professora  : Helida Batista
+
+var
+   qtd_alunos, i: inteiro
+   media: real
+   aprovados, reprovados: inteiro
+
+inicio
+   // Inicializa os contadores
+   aprovados <- 0
+   reprovados <- 0
+   
+   // Solicita a quantidade total de alunos
+   escreva("Digite a quantidade de alunos na turma: ")
+   leia(qtd_alunos)
+   escreval("")
+   
+   // Repetição dinamica com base no número de alunos informado
+   para i de 1 ate qtd_alunos faca
+      escreval("--- Aluno ", i, " de ", qtd_alunos, " ---")
+      escreva("Digite a média do aluno: ")
+      leia(media)
+      
+      // Verificação da média para aprovação (>= 7)
+      se (media >= 7.0) entao
+         aprovados <- aprovados + 1
+         escreval("Situação: APROVADO")
+      senao
+         reprovados <- reprovados + 1
+         escreval("Situação: REPROVADO")
+      fimse
+      
+      escreval("")
+   fimpara
+   
+   // Exibição do relatório final
+   escreval("=== RESUMO DA TURMA ===")
+   escreval("Total de alunos aprovados: ", aprovados)
+   escreval("Total de alunos reprovados: ", reprovados)
+
+fimalgoritmo
