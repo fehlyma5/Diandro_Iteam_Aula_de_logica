@@ -1,16 +1,16 @@
 Algoritmo "atividade12"
 // 
 //  
-// Descrição   : contagem de ano novo (descrescente)
+// DescriÃ§Ã£o   : contagem de ano novo (descrescente)
 // Autor(a)    : Diandro Felipe
 // Data atual  : 04/08/2026
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
    i: inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-   para i de 10 até  1 passo -1 faca
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
+   para i de 10 ate  1 passo -1 faca
         escreval(i)
    fimpara
    
