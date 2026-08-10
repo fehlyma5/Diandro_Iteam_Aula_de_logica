@@ -1,0 +1,25 @@
+algoritmo "atividade5"
+// Descrição   : calcula o salário com base nas horas e no valor da hora
+// Autor(a)    : Diandro Felipe
+// Data atual  : 03/08/2026
+
+var
+   horas: inteiro
+   valor_hora, salario: real
+
+inicio
+   // Solicita o número de horas trabalhadas
+   escreval("Informe o total de horas trabalhadas: ")
+   leia(horas)
+   
+   // Solicita o valor que o funcionário ganha por hora
+   escreval("Informe o valor recebido por hora: ")
+   leia(valor_hora)
+   
+   // Calcula o salário multiplicando as horas pelo valor de cada hora
+   salario <- horas * valor_hora
+   
+   // Exibe o resultado final
+   escreval("O valor do salário com base nas horas fornecidas é de: R$ ", salario)
+
+fimalgoritmo
