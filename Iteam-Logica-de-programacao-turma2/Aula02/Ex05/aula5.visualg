@@ -1,0 +1,21 @@
+algoritmo "aula5"
+// Disciplina   : Lógica de Programação
+// Descrição    : Lê um número e informa se ele é positivo, negativo ou zero.
+// Aluno        : Diandro Felipe
+// Professora   : Helida Batista
+
+var
+   numero: real
+
+inicio
+   escreva("Digite um número: ")
+   leia(numero)
+   
+   // Se for 0 ou maior, é positivo
+   se (numero >= 0) entao
+      escreval("O número é POSITIVO!")
+   senao
+      escreval("O número é NEGATIVO!")
+   fimse
+
+fimalgoritmo
