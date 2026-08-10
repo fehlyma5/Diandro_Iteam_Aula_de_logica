@@ -1,22 +1,22 @@
 Algoritmo "atividade4"
 // 
 //  
-// Descrição   : Area de um triagulo
+// DescriÃ§Ã£o   : Area de um triagulo
 // Autor(a)    : Diandro Felipe
 // Data atual  : 03/08/2026
 Var
-// Seção de Declarações das variáveis 
-   base, altura: inteiro
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
+   base, altura: real
    area:  real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
    escreval("Informe a base do triangulo: ")
    leia(base)
    escreval("Informe a altura do triangulo:  ")
    leia(altura)
    
    area <- (base*altura)/2
-   escreval("A area do triangulo é: ", area)
+   escreval("A area do triangulo Ã©: ", area)
 
 Fimalgoritmo
