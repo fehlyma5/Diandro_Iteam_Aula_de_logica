@@ -1,0 +1,21 @@
+algoritmo "Aula3"
+// Disciplina   : Lógica de Programação
+// Descrição    : Lê um número e exibe o seu dobro.
+// Aluno        : Diandro Felipe.
+// Professora   : Helida Batista.
+
+var
+   numero, dobro: real
+
+inicio
+   // Solicita que o usuário digite um número
+   escreva("Digite um número: ")
+   leia(numero)
+   
+   // Calcula o dobro do número
+   dobro <- numero * 2
+   
+   // Exibe o resultado
+   escreval("O dobro de ", numero, " é: ", dobro)
+
+fimalgoritmo
