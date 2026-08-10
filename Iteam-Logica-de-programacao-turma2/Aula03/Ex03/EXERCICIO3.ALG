@@ -1,15 +1,15 @@
 Algoritmo "exercicio3"
 // 
 //  
-// Descrição   : ler duas notas e informar a média aritmetica
+// DescriÃ§Ã£o   : ler duas notas e informar a mÃ©dia aritmetica
 // Autor(a)    : Diandro Felipe
 // Data atual  : 03/08/2026
 Var
-// Seção de Declarações das variáveis 
-     numero1,numero2: inteiro
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
+     numero1,numero2: real
      media: real
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
      escreval("Informe a nota 1: ")
      leia(numero1)
      escreval("Informe a nota2: ")
@@ -18,5 +18,5 @@ Inicio
      media <- (numero1+numero2)/2
      escreval("A nota 1 informada foi: ", numero1)
      escreval("A nota2 informada foi: ", numero2)
-     escreval("A média das notas é: ", media)
+     escreval("A mÃ©dia das notas Ã©: ", media)
 Fimalgoritmo
