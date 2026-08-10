@@ -1,0 +1,65 @@
+algoritmo "exercicio16"
+// Descrição   : Le o voto de 20 alunos, conta os votos de cada candidato e informa o vencedor.
+// Autor(a)    : Diandro Felipe
+// Data atual  : 09/08/2026
+// Professora  : Helida Batisa
+
+var
+   i, voto: inteiro
+   votos_joao, votos_maria, votos_carlos: inteiro
+
+inicio
+   // Inicializa os contadores de votos com zero
+   votos_joao <- 0
+   votos_maria <- 0
+   votos_carlos <- 0
+
+   // Repetição para ler os votos de 20 alunos
+   para i de 1 ate 20 faca
+      escreval("--- VOTAÇÃO (Aluno ", i, " de 20) ---")
+      escreval("1 - João")
+      escreval("2 - Maria")
+      escreval("3 - Carlos")
+      escreva("Digite o número do seu candidato: ")
+      leia(voto)
+
+      // Contabiliza o voto recebido
+      se (voto = 1) entao
+         votos_joao <- votos_joao + 1
+      senao
+         se (voto = 2) entao
+            votos_maria <- votos_maria + 1
+         senao
+            se (voto = 3) entao
+               votos_carlos <- votos_carlos + 1
+            senao
+               escreval("Voto inválido! Esse voto não será contabilizado.")
+            fimse
+         fimse
+      fimse
+      escreval("")
+   fimpara
+
+   // Exibição do total de votos de cada candidato
+   escreval("=== RESULTADO DA ELEIÇÃO ===")
+   escreval("João: ", votos_joao, " voto(s)")
+   escreval("Maria: ", votos_maria, " voto(s)")
+   escreval("Carlos: ", votos_carlos, " voto(s)")
+   escreval("----------------------------")
+
+   // Verificação do vencedor ou empate
+   se (votos_joao > votos_maria) e (votos_joao > votos_carlos) entao
+      escreval("Vencedor: João!")
+   senao
+      se (votos_maria > votos_joao) e (votos_maria > votos_carlos) entao
+         escreval("Vencedora: Maria!")
+      senao
+         se (votos_carlos > votos_joao) e (votos_carlos > votos_maria) entao
+            escreval("Vencedor: Carlos!")
+         senao
+            escreval("Houve um empate entre os candidatos mais votados!")
+         fimse
+      fimse
+   fimse
+
+fimalgoritmo
