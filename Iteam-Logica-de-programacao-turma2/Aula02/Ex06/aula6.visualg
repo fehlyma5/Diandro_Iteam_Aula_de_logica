@@ -1,0 +1,29 @@
+algoritmo "aula6"
+// Disciplina   : Lógica de Programação
+// Descrição    : Lê o saldo e o valor do saque e informa se é possível realizar a operação.
+// Aluno        : Diandro Felipe
+// Professora   : Helida Batista
+
+var
+   saldo, saque: real
+
+inicio
+   // Define um saldo inicial fixo para o exemplo
+   saldo <- 1000.00
+   
+   escreval("--- CAIXA ELETRÔNICO ---")
+   escreval("Seu saldo atual é: R$ ", saldo)
+   escreval("")
+   
+   // Solicita o valor que o usuário deseja sacar
+   escreva("Digite o valor que deseja sacar: R$ ")
+   leia(saque)
+   
+   // Verifica se o valor do saque é menor ou igual ao saldo disponível
+   se (saque <= saldo) entao
+      escreval("Saque realizado com sucesso!")
+   senao
+      escreval("Saldo insuficiente para realizar o saque!")
+   fimse
+
+fimalgoritmo
