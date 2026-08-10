@@ -8,14 +8,19 @@ var
    numero: real
 
 inicio
+   // Solicita o número ao usuário
    escreva("Digite um número: ")
    leia(numero)
    
-   // Se for 0 ou maior, é positivo
-   se (numero >= 0) entao
-      escreval("O número é POSITIVO!")
+   // Estrutura de seleção composta (iniciamos verificando se o numero é positivo, na sequencia se é negativo, e por fim se ele é  neutro)
+   se (numero > 0) entao
+      escreval("O número ", numero, " é POSITIVO.")
    senao
-      escreval("O número é NEGATIVO!")
+      se (numero < 0) entao
+         escreval("O número ", numero, " é NEGATIVO.")
+      senao
+         escreval("O número digitado é ZERO (neutro).")
+      fimse
    fimse
 
 fimalgoritmo
